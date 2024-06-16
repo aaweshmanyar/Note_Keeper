@@ -1,0 +1,120 @@
+:root {
+    --notecard-width: 400px;
+    --notecard-height: 200px;
+}
+
+#Notecard {
+    /* border: 2px solid red; */
+    width: var(--notecard-width);
+    height: var(--notecard-height);
+    margin: auto;
+    padding: 10px 20px;
+
+    background: rgba(255, 255, 255, .9);
+    box-shadow: 0 0 10px rgba(192, 192, 192, 0.5);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    overflow: hidden;
+    /* align-items: flex-start; */
+}
+
+#Notecard:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.01);
+    box-shadow: 0 0 10px #ffb172a1;
+}
+
+#Notecard:hover #noteOptions {
+    display: flex;
+}
+
+#noteContent {
+    cursor: pointer;
+    width: 100%;
+}
+
+#noteTitle {
+    font-size: x-large;
+}
+
+#noteTagline {
+    color: grey;
+}
+
+#notePinsec {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#notePinsec>a {
+    margin: auto;
+}
+
+.notePin {
+    transform: rotate(-45deg);
+    height: 20px;
+}
+
+#noteOptions {
+    display: none;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+#noteDate {
+    opacity: .5;
+    font-size: x-small;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+@media screen and (max-width : 1500px) {
+    :root {
+        --notecard-width: 350px;
+    }
+}
+
+@media screen and (max-width : 1000px) {
+    :root {
+        --notecard-width: 300px;
+        --notecard-height: 200px;
+    }
+
+    #noteTitle {
+        font-size: large;
+    }
+
+    #noteTagline {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width : 750px) {
+    :root {
+        --notecard-width: 250px;
+        --notecard-height: 150px;
+    }
+}
+
+@media screen and (max-width : 650px) {
+    :root {
+        --notecard-width: 350px;
+        --notecard-height: 200px;
+    }
+}
+
+@media screen and (max-width : 450px) {
+    :root {
+        --notecard-width: 300px;
+        --notecard-height: 200px;
+    }
+}

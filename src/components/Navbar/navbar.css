@@ -1,0 +1,66 @@
+#Navbar {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px var(--nav-padding-LR);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: var(--nav-height);
+    width: 100vw;
+    z-index: 100;
+    /* padding: 30px 50px; */
+
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 5px 10px rgba(192, 192, 192, 0.2);
+}
+
+#Navheading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#LogoIcon {
+    height: 30px;
+}
+
+#logo>h1 {
+    font-size: x-large;
+}
+
+#Navsearch {
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    width: 50vw;
+    background: rgba(192, 192, 192, 0.3);
+    border-radius: 5px;
+}
+
+#searchIcon {
+    height: 20px;
+}
+
+#searchInp {
+    border: none;
+    background: transparent;
+    width: 100%;
+}
+
+#searchInp:focus {
+    border: none;
+    outline: none;
+}
+
+
+/*---------------------- Responsiveness */
+@media screen and (max-width : 600px) {
+    #Navsearch {
+        display: none;
+    }
+}

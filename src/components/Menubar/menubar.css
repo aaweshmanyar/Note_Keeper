@@ -1,0 +1,52 @@
+#Menubar {
+
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    /* padding: 20px var(--nav-padding-LR); */
+    padding: 20px 0;
+
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    height: calc(100vh - var(--nav-height));
+    width: 85px;
+    z-index: 90;
+    /* padding: 30px 50px; */
+
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    box-shadow: 5px 0px 10px rgba(192, 192, 192, 0.2);
+}
+
+.menubarIcons {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+    border-radius: 100px;
+}
+
+.menubarIcons:hover {
+    background: rgba(255, 206, 161, 0.6);
+    cursor: pointer;
+}
+
+/* .menubarIcons>a {
+    margin: auto;
+} */
+
+.menubarIcons>img {
+    height: 25px;
+}
+
+@media screen and (max-width : 1200px) {
+    #Menubar {
+        display: none;
+    }
+}
